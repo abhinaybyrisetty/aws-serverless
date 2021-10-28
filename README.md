@@ -72,12 +72,11 @@ Docker image
 
 The Docker image has the following:
 
-- Node 6.10 (Alpine)
+- Node (Alpine 3.14)
 - [aws-cli](https://github.com/aws/aws-cli)
 - [aws-shell](https://github.com/awslabs/aws-shell)
-- [Serverless Framework v1.4](https://serverless.com)
-- [yarn](https://github.com/yarnpkg/yarn)
-- zip: handy to zip your own serverless artefact
+- [Serverless Framework](https://serverless.com)
+- zip: handy to zip your own serverless artifact
 - envsubst: quite useful to create file based on a template using env vars
 
 ### Scripts
