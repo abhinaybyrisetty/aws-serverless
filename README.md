@@ -25,14 +25,6 @@ AWS_SECRET_ACCESS_KEY=
 AWS_DEFAULT_REGION=
 AWS_ACCOUNT_ID=
 
-# Cloudformation stack name to be created/updated/deleted
-STACK_NAME=
-# the cloudformation file path
-CFN_FILE=
-# the cloudformation params file
-CFN_PARAMS_FILE=
-```
-
 Those environment variables must all be set
 
 - using a file and passing it to `docker run --env-file path/to/file` (see example)
@@ -78,13 +70,3 @@ The Docker image has the following:
 - [Serverless Framework](https://serverless.com)
 - zip: handy to zip your own serverless artifact
 - envsubst: quite useful to create file based on a template using env vars
-
-### Scripts
-
-Some scripts has been written to help deploying to AWS (see example)
-
-Name | Description
----|---
-cfn-create-or-update.sh | Create or update a cloudformation
-cfn-delete.sh | Delete a cloudformation
-cfn-validate-template.sh | Validate a cloudformation template

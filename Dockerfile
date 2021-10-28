@@ -6,6 +6,4 @@ RUN apk --no-cache update && \
     rm -rf /var/cache/apk/*
 RUN apk add --update nodejs
 RUN npm install -g serverless aws-sdk
-COPY scripts /opt/scripts
-ENV PATH "$PATH:/opt/scripts"
 WORKDIR /opt/app

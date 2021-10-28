@@ -1,5 +1,5 @@
-SERVERLESS_VERSION = 1.14.0
-IMAGE_NAME ?= aws-serverless:$(SERVERLESS_VERSION)
+SERVERLESS_VERSION = v3
+IMAGE_NAME ?= abhinaybyrisetty/serverless:$(SERVERLESS_VERSION)
 TAG = $(SERVERLESS_VERSION)
 
 dockerBuild:
